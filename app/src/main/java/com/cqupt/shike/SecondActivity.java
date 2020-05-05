@@ -49,6 +49,8 @@ public class SecondActivity extends AppCompatActivity {
                 values.put("content", contentinput);
                 FirstActivity.db.insert("Word",null,values);
                 values.clear();
+                Intent intent = new Intent(SecondActivity.this, FirstActivity.class);
+                startActivity(intent);
             }
         });
     }
